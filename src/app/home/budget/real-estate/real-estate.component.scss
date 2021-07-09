@@ -1,0 +1,27 @@
+.col-6 {
+	&:first-child {
+		border: 1px solid grey;
+		border-left: none;
+	}
+	&:last-child {
+		border: 1px solid grey;
+		border-right: none;
+		border-left: none;
+		display: flex;
+		flex-direction: column;
+
+		h2 {
+			text-align: center;
+			color: #7b7b7b;
+		}
+
+		p {
+			font-size: 30px;
+			font-weight: 600;
+			margin: auto;
+		}
+	}
+	h2 {
+		color: #7b7b7b;
+	}
+}

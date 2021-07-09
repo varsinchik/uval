@@ -1,0 +1,30 @@
+<div class="container">
+
+	<div class="row">
+		<div class="col p-0">
+			<button class="btn btn-success" (click)="goBack()"> <<< НАЗАД </button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6"></div>
+		<div class="col-6"><p>Всего: 35425424</p></div>
+
+	</div>
+
+	<div class="row" *ngFor="let adr of adress">
+		<div class="col-6">
+			<h2>Адрес:</h2>
+			<div class="ms-2">
+				<p><strong>Страна:</strong> {{adr.address.country}}</p>
+				<p><strong>Город:</strong> {{adr.address.city}}</p>
+				<p><strong>Улица:</strong> {{adr.address.street}}</p>
+				<p><strong>Дом:</strong> {{adr.address.house}}</p>
+			</div>
+		</div>
+		<div class="col-6">
+			<h2>Доход</h2>
+			<p> {{adr.address.zipcode | currency: 'USD'}}</p>
+		</div>
+	</div>
+</div>

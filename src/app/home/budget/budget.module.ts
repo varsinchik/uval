@@ -3,6 +3,7 @@ import {RealEstateComponent} from "./real-estate/real-estate.component";
 import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserModule} from "@angular/platform-browser";
+import {DebtorsComponent} from './debtors/debtors.component';
 
 const routes: Routes = [
 	{path: 'budget/real-estate', component: RealEstateComponent}
@@ -10,7 +11,8 @@ const routes: Routes = [
 
 @NgModule({
 	declarations: [
-		RealEstateComponent
+		RealEstateComponent,
+		DebtorsComponent
 	],
 	imports: [
 		RouterModule.forChild(routes),
