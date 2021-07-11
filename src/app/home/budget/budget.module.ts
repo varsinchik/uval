@@ -4,9 +4,11 @@ import {RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserModule} from "@angular/platform-browser";
 import {DebtorsComponent} from './debtors/debtors.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-	{path: 'budget/real-estate', component: RealEstateComponent}
+	{path: 'budget/real-estate', component: RealEstateComponent},
+	{path: 'budget/debtors', component: DebtorsComponent}
 ]
 
 @NgModule({
@@ -17,7 +19,9 @@ const routes: Routes = [
 	imports: [
 		RouterModule.forChild(routes),
 		HttpClientModule,
-		BrowserModule
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule
 	],
 	exports: [RouterModule]
 })

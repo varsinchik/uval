@@ -21,8 +21,7 @@ export class RealEstateComponent implements OnInit {
 	ngOnInit(): void {
 		this.http.get<IAdress[]>('http://fakeapi.jsonparseronline.com/users')
 			.subscribe(addrObj => {
-					this.adress = addrObj
-				console.log(this.adress)
+				this.adress = addrObj
 				}
 			)
 	}
